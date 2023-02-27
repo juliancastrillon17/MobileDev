@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ClaseDosTestJava</string>
+    <string name="title">Cálculo de áreas</string>
+    <string name="first">Primer parámetro</string>
+    <string name="second">Segundo parámetro</string>
+    <string name="resultText">El resultado es:</string>
+    <string name="result">#</string>
+</resources>
