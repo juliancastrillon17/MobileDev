@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="User:"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/font"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:id="@+id/userPrint"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/font">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="Email:"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/font"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:id="@+id/emailPrint"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/font">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="Password:"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/font"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:id="@+id/passwordPrint"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/font"
+                android:inputType="textPassword">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/buttonColor"
+                android:text="Llamar"
+                android:id="@+id/phone"
+                android:paddingRight="10dp">
+            </Button>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/buttonColor"
+                android:text="google"
+                android:id="@+id/goog"
+                android:layout_marginLeft="25dp">
+            </Button>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
