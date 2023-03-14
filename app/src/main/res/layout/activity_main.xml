@@ -145,6 +145,13 @@
                 android:text="Sign In"
                 android:id="@+id/sing">
             </Button>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/buttonColor"
+                android:text="Save"
+                android:id="@+id/save">
+            </Button>
         </LinearLayout>
 
 
