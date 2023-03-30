@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".singin"
+    android:orientation="vertical"
+    android:background="@color/back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Sin Up"
+            android:textSize="25dp"
+            android:textColor="@color/backFirst">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="Personal Id:"
+                android:textSize="25dp"
+                android:textColor="@color/white">
+            </TextView>
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:id="@+id/identification"
+                android:gravity="center_vertical"
+                android:textColor="@color/white">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="Full Name:"
+                android:textSize="25dp"
+                android:textColor="@color/white">
+            </TextView>
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:id="@+id/name"
+                android:gravity="center_vertical"
+                android:textColor="@color/white">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="Phone Number:"
+                android:textSize="25dp"
+                android:textColor="@color/white">
+            </TextView>
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:id="@+id/number"
+                android:gravity="center_vertical"
+                android:textColor="@color/white">
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/registrar"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:onClick="sing"
+            android:text="Registrar"
+            android:textColor="@color/black"></Button>
+
+        <Button
+            android:id="@+id/consultar"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/white"
+            android:onClick="consulta"
+            android:text="Consultar"
+            android:textColor="@color/black"></Button>
+    </LinearLayout>
+</LinearLayout>
