@@ -1,18 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/back">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/login"
+            android:textSize="25dp"
+            android:textColor="@color/white">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="250dp"
+            android:text="Hola de nuevo"
+            android:textSize="45dp"
+            android:textColor="@color/white">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:text="RankBank"
+            android:textSize="44dp"
+            android:textColor="@color/white">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Es genial tenerte de nuevo"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/white">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/whiteButton"
+            android:text="Iniciar sesión"
+            android:textColor="@color/black"
+            android:id="@+id/singin">
+        </Button>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/back"
+            android:text="Registrarse"
+            android:textColor="@color/white"
+            android:id="@+id/signup">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

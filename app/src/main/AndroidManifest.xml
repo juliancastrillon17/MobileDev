@@ -12,6 +12,18 @@
         android:theme="@style/Theme.RankBank"
         tools:targetApi="31">
         <activity
+            android:name=".Appi"
+            android:exported="false" />
+        <activity
+            android:name=".singinTwo"
+            android:exported="false" />
+        <activity
+            android:name=".AdminBD"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
             android:name=".Splash"
             android:exported="true">
             <intent-filter>
@@ -20,10 +32,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

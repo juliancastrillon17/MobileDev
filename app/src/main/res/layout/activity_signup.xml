@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    android:orientation="vertical"
+    android:background="@color/back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Inicio de sesión"
+            android:textSize="25dp"
+            android:textColor="@color/backFirst">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="Documento:  "
+                android:textSize="25dp"
+                android:textColor="@color/white">
+            </TextView>
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:id="@+id/identification"
+                android:gravity="center_vertical"
+                android:textColor="@color/white">
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="Usuario:"
+                android:textSize="25dp"
+                android:textColor="@color/white">
+            </TextView>
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:id="@+id/user"
+                android:gravity="center_vertical"
+                android:textColor="@color/white">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="Contraseña: "
+                android:textSize="25dp"
+                android:textColor="@color/white">
+            </TextView>
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:id="@+id/password"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:inputType="textPassword">
+            </EditText>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/white"
+            android:onClick="sing"
+            android:text="Registrarse"
+            android:textColor="@color/black"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
