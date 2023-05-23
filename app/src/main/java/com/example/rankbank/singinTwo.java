@@ -35,6 +35,8 @@ public class singinTwo extends AppCompatActivity {
 
             if(fila.getCount()>0){
                 Intent sing = new Intent(this,Appi.class);
+                sing.putExtra("usuario",usuario);
+                sing.putExtra("contrasena",contrasena);
                 startActivity(sing);
             }
         }else {
